@@ -70,7 +70,7 @@ const Cart = () => {
                       >
                         Qty
                       </label>
-                      <select >
+                      <select>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -104,25 +104,25 @@ const Cart = () => {
           Shipping and taxes calculated at checkout.
         </p>
         <div className="mt-6">
-          <a
+          <Link to={"/checkout"}
             href="#"
             className="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
           >
             Checkout
-          </a>
+          </Link>
         </div>
         <div className="mt-6 flex justify-center text-center text-sm text-gray-500">
           <p>
             or{" "}
             <Link to={"/"}>
-            <button
-              type="button"
-              className="font-medium text-indigo-600 hover:text-indigo-500"
-              onClick={() => setOpen(false)}
-            >
-              Continue Shopping
-              <span aria-hidden="true"> &rarr;</span>
-            </button>
+              <button
+                type="button"
+                className="font-medium text-indigo-600 hover:text-indigo-500"
+                onClick={() => setOpen(false)}
+              >
+                Continue Shopping
+                <span aria-hidden="true"> &rarr;</span>
+              </button>
             </Link>
           </p>
         </div>
