@@ -1,6 +1,3 @@
-import { Fragment, useState } from "react";
-import { Dialog, Transition } from "@headlessui/react";
-import { XMarkIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
 
 const products = [
@@ -31,7 +28,7 @@ const products = [
 ];
 
 const Cart = () => {
-  const [open, setOpen] = useState(true);
+
   return (
     <div className="mx-auto mt-24 bg-white max-w-7xl px-4 sm:px-6 lg:px-8">
       <h1 className="text-3xl pt-5 text-center font-bold tracking-tight text-gray-900">
@@ -118,7 +115,6 @@ const Cart = () => {
               <button
                 type="button"
                 className="font-medium text-indigo-600 hover:text-indigo-500"
-                onClick={() => setOpen(false)}
               >
                 Continue Shopping
                 <span aria-hidden="true"> &rarr;</span>
